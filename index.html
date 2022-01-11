@@ -1,43 +1,74 @@
 <html>
     <head>
         <!-- Aryaman Portfolio-->
-        <link rel="stylesheet" href="styles.css">
+        <!--<link rel="stylesheet" href="styles.css">-->
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
         <title>
             My Portfolio
         </title>
         
     </head>
     <body>
+        
         <nav>
-            <img src="" alt="icon"/>
+            <img src="resources/dp.jpg" alt="icon"/>
             <a href="#home">Home</a>
             <a href="#projects">Projects</a>
             <a href="#CV">CV</a>
             <a href="#Extracurricular">Extracurricular</a>
             
         </nav>
-        <div class="imgnintro">
-            <img id="dp" src="resources/dp.jpg" alt="myphoto"/>
+        
+           
+        
+       
+            <div class="imgnintro">
+                
+                  
+                
+                
             <p class="intro">Hi, I'm Aryaman and this is my page. I am interested in working on technology for social good.
                 Here's some info about me.
             </p>
-        </div>
+            </div>
+            
+            
+
+            
+
         <div class="Projects">
-            <p class="section-title">Projects</p><br>
+            <p class="section-title">Projects</p>
             <ul id="project-list" class="section-body">
-                <li>Hateful Memes</li>
-                <li>Gesture Car</li>
-                <li>Flower Classifier</li>
-                <li>Melanoma Detector</li>
+                <li>Hateful Memes<br>
+                    Trained a combination of Resnet and BERT to classify whether memes were offensive or not.
+                    This was done as a part of Data Driven's hateful memes challenge. Achieved 0.678 best AUC score.
+                </li>
+                <li>Gesture Car<br>
+                    Used a hand keypoint detection model to detect gestures and used Robot Operating System (ROS) to 
+                    use the gestures as signals to simulate movement of a car.
+                </li>
+                <li>Flower Classifier<br>
+                    Developed a custom neural net to classify different species of flowers from images. Also used transfer
+                    learning on pretrained Inception Resnet V2.
+                </li>
+                <li>Melanoma Detector<br>
+                    Developed a neural network to classify melanoma from images of skin lesions. Data was sourced through Kaggle.
+                </li>
             </ul>
 
         </div>
         <div class="Extracurricular">
-            <p class="section-title">Extracurricular</p><br>
+            <p class="section-title">Extracurricular</p>
             <ul id="extracurricular-list" class="section-body">
-                <li>Rover</li>
-                <li>MAD</li>
+                <li>Rover<br>
+                Worked as an autonomous subsytems engineer on a mars rover prototype developed to tackle various competitions like
+                the European Rover Challenge 2019 and University Rover Challenge 2020. 
+                </li>
+                <li>MAD<br>
+                Worked as a volunteer at the non profit organisation Make a Difference. Taught 9th grade science to children at shelter
+                homes for a year.
+                </li>
             </ul>
 
 
