@@ -1,82 +1,95 @@
 <html>
     <head>
-        <!-- Aryaman Portfolio-->
-        <!--<link rel="stylesheet" href="styles.css">-->
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
-        <title>
-            My Portfolio
-        </title>
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="resources/css/all.css" rel="stylesheet">
+        <title>Portfolio</title>
     </head>
     <body>
-        
         <nav>
-            <img src="resources/dp.jpg" alt="icon"/>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#CV">CV</a>
-            <a href="#Extracurricular">Extracurricular</a>
-            
-        </nav>
-        
-           
-        
-       
-            <div class="imgnintro">
-                
-                  
-                
-                
-            <p class="intro">Hi, I'm Aryaman and this is my page. I am interested in working on technology for social good.
-                Here's some info about me.
-            </p>
+            <div class="page-links">
+                <a href="#Projects">Projects</a>
+                <a href="#Extracurricular">Extracurricular</a>
+                <a href="#Work-Experience">Work Experience</a>
+                <a href="_blank" download="/home/madlad/Documents/Final_Resume.pdf"> CV</a>
+
+            </div>
+            <div class="icons">
+                <i class="fab fa-linkedin fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-medium fa-2x"></i>
             </div>
             
-            
-
-            
-
-        <div class="Projects">
-            <p class="section-title">Projects</p>
-            <ul id="project-list" class="section-body">
-                <li>Hateful Memes<br>
-                    Trained a combination of Resnet and BERT to classify whether memes were offensive or not.
-                    This was done as a part of Data Driven's hateful memes challenge. Achieved 0.678 best AUC score.
+        </nav>
+        <div class="main-title">
+            Aryaman Sriram<br>
+            A.I Researcher from India
+        </div>
+        <div class="img">
+            <img src="resources/dp.jpg" alt="mypic">
+            <p class="text"> I am an A.I researcher from Mumbai, India, interested in using A.I for social good.</p>
+        </div>
+        <div id="Work-Experience" class="section-container">
+            <p class="section-heading">Work Experience</p>
+            <ul class="section-list">
+                <li><h3>Wildly</h3>
+                Worked on developing audio classification models for classifying harmful man made sounds in national parks.
+                The project was aimed at detecting poaching activities in national parks. Also worked on active learning to reduce
+                dependence of model training on data.
                 </li>
-                <li>Gesture Car<br>
-                    Used a hand keypoint detection model to detect gestures and used Robot Operating System (ROS) to 
-                    use the gestures as signals to simulate movement of a car.
+                <li><h3>Wikilimo</h3>
+                Worked on developing a deep learning model for prediction of rainfall quantity to be received. The company was 
+                looking at using data science to solve problems associated with climate change.
                 </li>
-                <li>Flower Classifier<br>
-                    Developed a custom neural net to classify different species of flowers from images. Also used transfer
-                    learning on pretrained Inception Resnet V2.
+                <li><h3>Algo8.ai</h3>
+                Worked on developing initial prototypes for products like a supermarket chatbot. Also worked on flask backend
+                development for a variety of products.
                 </li>
-                <li>Melanoma Detector<br>
-                    Developed a neural network to classify melanoma from images of skin lesions. Data was sourced through Kaggle.
+                <li><h3>FactEntry</h3>
+                Worked on using NLP models to extract relevant fields from financial bond documents. The project was done for 
+                FactEntry the company through my university.
                 </li>
             </ul>
-
         </div>
-        <div class="Extracurricular">
-            <p class="section-title">Extracurricular</p>
-            <ul id="extracurricular-list" class="section-body">
-                <li>Rover<br>
-                Worked as an autonomous subsytems engineer on a mars rover prototype developed to tackle various competitions like
-                the European Rover Challenge 2019 and University Rover Challenge 2020. 
+        <div id="Projects" class="section-container">
+            <p class="section-heading">Projects</p>
+            <ul class="section-list">
+                <li><h3>Hateful Memes</h3>
+                Built a multimodal classifier using transfer learning on resnet and BERT to classify offensive memes.
+                Data was sourced from Data Driven's website since it was a part of their competition. Achieved 0.678 AUC.
                 </li>
-                <li>MAD<br>
-                Worked as a volunteer at the non profit organisation Make a Difference. Taught 9th grade science to children at shelter
-                homes for a year.
+                <li><h3> Controlled Car</h3>
+                Used a pretrained hand keypoint detection model to map gestures to actions and used ROS to simulate the movement
+                of a car using those messages.
+                </li>
+                <li><h3>Flower Classifier</h3>
+                Developed a flower classifier from scratch to classify different species of flowers form their images. Custom CNN
+                architecture was used. Achieved 0.70 accuracy. Also conducted transfer learning experiments on Inception Resnet to 
+                achieve an accuracy of 0.83.
+                </li>
+                <li><h3>Cancer detection from skin lesions</h3>
+                Developed custom CNN with image augmentation techniques to detect cancerous skin lesions. This project was a
+                part of Kaggle's Skin Cancer classification challenge.
                 </li>
             </ul>
-
-
         </div>
-       <footer>
-           <p>Contact me</p><br>
-           <p> Icons</p>
-       </footer>
+        <div id="Extracurricular" class="section-container">
+            <p class="section-heading">Extracurricular</p>
+            <ul class="section-list">
+                <li><h3>SEDS-VIT</h3>
+                Worked as autonomous subsystems engineer at SEDS-VIT my college rover team. We achieved 19th rank world wide
+                at the European Rover Challenge 2019 and 33rd rank at the University Rover Challenge 2020.
+                </li>
+                <li><h3>MAD</h3>
+                Worked as a volunteer at Make a Difference a non profit organization dedicated to working for unpriveleged
+                children's education. I taught science to a class of 3 underpriveleged children every weekend for a year.
+                </li>
+            </ul>
+        </div>
+       
+
 
     </body>
 </html>
