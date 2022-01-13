@@ -25,6 +25,7 @@ li {
     padding: 20px;
     height: 85%;
     background-color: white;
+    
   }
   
 /* On mouse-over, add a deeper shadow */
@@ -98,6 +99,7 @@ img {
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     row-gap: 40px;
+   
     
 }
 
@@ -107,3 +109,4 @@ img {
     font-family: 'Roboto';
     font-size: 50px;
 }
+
